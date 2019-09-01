@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>我的第一篇博客文章 | Hexo</title>
+  <title>我的第二篇博客文章 关于线程 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一章内容  第二章内容  参考文献www.codesheep.cn">
+  <meta name="description" content="线程创建方式1、类1继承Thread类，覆盖其run()方法，类1子类对象.start()即可启动线程     因为线程运行所用start()方法，会调用run()方法，所以将要执行     的代码放入run()方法中。如果    在run()方法外部定义变量，每个进程的变量     是属于自己对象的是独立。 2、类2实现Runnable接口，并且实现run()方法，将类2的子类对象传入新建">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客文章">
-<meta property="og:url" content="http://yoursite.com/2019/08/22/我的第一篇博客文章/index.html">
+<meta property="og:title" content="我的第二篇博客文章 关于线程">
+<meta property="og:url" content="http://yoursite.com/2019/09/01/我的第二篇博客文章-关于线程/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一章内容  第二章内容  参考文献www.codesheep.cn">
+<meta property="og:description" content="线程创建方式1、类1继承Thread类，覆盖其run()方法，类1子类对象.start()即可启动线程     因为线程运行所用start()方法，会调用run()方法，所以将要执行     的代码放入run()方法中。如果    在run()方法外部定义变量，每个进程的变量     是属于自己对象的是独立。 2、类2实现Runnable接口，并且实现run()方法，将类2的子类对象传入新建">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-22T04:34:31.005Z">
+<meta property="og:updated_time" content="2019-09-01T07:33:43.666Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的第一篇博客文章">
-<meta name="twitter:description" content="第一章内容  第二章内容  参考文献www.codesheep.cn">
+<meta name="twitter:title" content="我的第二篇博客文章 关于线程">
+<meta name="twitter:description" content="线程创建方式1、类1继承Thread类，覆盖其run()方法，类1子类对象.start()即可启动线程     因为线程运行所用start()方法，会调用run()方法，所以将要执行     的代码放入run()方法中。如果    在run()方法外部定义变量，每个进程的变量     是属于自己对象的是独立。 2、类2实现Runnable接口，并且实现run()方法，将类2的子类对象传入新建">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,32 +154,37 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客文章" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-我的第二篇博客文章-关于线程" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      我的第一篇博客文章
+      我的第二篇博客文章 关于线程
     </h1>
   
 
         
-        <a href="/2019/08/22/我的第一篇博客文章/" class="archive-article-date">
-  	<time datetime="2019-08-22T04:23:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-22</time>
+        <a href="/2019/09/01/我的第二篇博客文章-关于线程/" class="archive-article-date">
+  	<time datetime="2019-09-01T07:32:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-01</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
+        <h2 id="线程创建方式"><a href="#线程创建方式" class="headerlink" title="线程创建方式"></a>线程创建方式</h2><p>1、类1继承Thread类，覆盖其run()方法，类1子类对象.start()即可启动线程<br>     因为线程运行所用start()方法，会调用run()方法，所以将要执行<br>     的代码放入run()方法中。如果    在run()方法外部定义变量，每个进程的变量<br>     是属于自己对象的是独立。</p>
+<p>2、类2实现Runnable接口，并且实现run()方法，将类2的子类对象传入新建<br>     Thread，即可开启线程，同样的将要线程执行的代码放如run()方法中，但<br>     是如果在外部定义的变量，多个线程公用一个变量。</p>
 <hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://www.codesheep.cn" target="_blank" rel="noopener">www.codesheep.cn</a></p>
+<h2 id="同步代码块"><a href="#同步代码块" class="headerlink" title="同步代码块"></a>同步代码块</h2><pre><code>使用同步代码块可将代码一起执行，不会因为线程运行而导致其他线程进入同步
+代码块中
 
+优点：可以防止线程冲突导致错误，如卖票问题
+
+缺点：在线程数量多的情况下，会明显降低运行速度，因为没有拿到锁的线程，无法
+继续运行</code></pre><hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2>
       
 
       
@@ -258,7 +263,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/22/我的第一篇博客文章/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/01/我的第二篇博客文章-关于线程/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -272,18 +277,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/01/我的第二篇博客文章-关于线程/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          我的第二篇博客文章 关于线程
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/08/22/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2019/08/22/我的第一篇博客文章/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的第一篇博客文章</div>
       <i class="icon-circle-right"></i>
     </a>
   

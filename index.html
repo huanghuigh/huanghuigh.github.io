@@ -152,6 +152,78 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-我的第二篇博客文章-关于线程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/01/我的第二篇博客文章-关于线程/">我的第二篇博客文章 关于线程</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/01/我的第二篇博客文章-关于线程/" class="archive-article-date">
+  	<time datetime="2019-09-01T07:32:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="线程创建方式"><a href="#线程创建方式" class="headerlink" title="线程创建方式"></a>线程创建方式</h2><p>1、类1继承Thread类，覆盖其run()方法，类1子类对象.start()即可启动线程<br>     因为线程运行所用start()方法，会调用run()方法，所以将要执行<br>     的代码放入run()方法中。如果    在run()方法外部定义变量，每个进程的变量<br>     是属于自己对象的是独立。</p>
+<p>2、类2实现Runnable接口，并且实现run()方法，将类2的子类对象传入新建<br>     Thread，即可开启线程，同样的将要线程执行的代码放如run()方法中，但<br>     是如果在外部定义的变量，多个线程公用一个变量。</p>
+<hr>
+<h2 id="同步代码块"><a href="#同步代码块" class="headerlink" title="同步代码块"></a>同步代码块</h2><pre><code>使用同步代码块可将代码一起执行，不会因为线程运行而导致其他线程进入同步
+代码块中
+
+优点：可以防止线程冲突导致错误，如卖票问题
+
+缺点：在线程数量多的情况下，会明显降低运行速度，因为没有拿到锁的线程，无法
+继续运行</code></pre><hr>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/01/我的第二篇博客文章-关于线程/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
